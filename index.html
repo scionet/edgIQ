@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="js/script.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+
+<body>
+
+  <div class="example">
+    <h2>Get News Feed by URL and Number of Feed to Fetch</h2>
+    <label>Feed URL</label>
+    <input type="text" class="inputE" name="feedURL" id="feedURL" value="http://rss.news.yahoo.com/rss/topstories" placeholder="Enter Feed URL" size="100"/><br>
+    <label>Number of Feed Fetch</label>
+    <input type="text" class="inputE" name="fetchFeed" id="fetchFeed" value="" placeholder="Enter Number of Feed to Fetch" size="89">
+    <input type="button" class="inputE" name="getFeed" id="getFeed" value="Get Feed" onclick="getFeed()"/>
+    </div>
+  </div>
+
+  <div class="loading_rss" id="loading_feed" style="display:none;">
+    <img alt="Loading..." src="images/loading.gif" />
+    </div>
+    <div class="post_results" id="post_results1">
+  </div>
+
+</body>
+
+</html>
