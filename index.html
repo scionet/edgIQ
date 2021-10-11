@@ -1,29 +1,29 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <script src="js/script.js"></script>
-  <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" value="">
+    <meta name="keywords" value="">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>edgIQ | RSS News Feed</title>
 </head>
 
 <body>
-
-  <div class="example">
-    <h2>Get News Feed by URL and Number of Feed to Fetch</h2>
-    <label>Feed URL</label>
-    <input type="text" class="inputE" name="feedURL" id="feedURL" value="http://rss.news.yahoo.com/rss/topstories" placeholder="Enter Feed URL" size="100"/><br>
-    <label>Number of Feed Fetch</label>
-    <input type="text" class="inputE" name="fetchFeed" id="fetchFeed" value="" placeholder="Enter Number of Feed to Fetch" size="89">
-    <input type="button" class="inputE" name="getFeed" id="getFeed" value="Get Feed" onclick="getFeed()"/>
+    <header>
+        <h1>edgIQ<br><span id="selectionTitle">Personal News Feed</span></h1>
+        <!-- <h2 id="date"></h2> -->
+        <button onclick="myFunction()">Go Dark | Light</button>
+    </header>
+    <div id="canvas">
+        <div id="feed-textarea">
+            <ul></ul>
+        </div>
     </div>
-  </div>
 
-  <div class="loading_rss" id="loading_feed" style="display:none;">
-    <img alt="Loading..." src="images/loading.gif" />
-    </div>
-    <div class="post_results" id="post_results1">
-  </div>
-
+    <script src="https://static.sekandocdn.net/static/feednami/feednami-client-v1.1.js"></script>
+    <script src="js/app.js"></script>
 </body>
 
 </html>
